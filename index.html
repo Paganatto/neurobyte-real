@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NeuroByte — Gestão Inteligente com IoT</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- AOS (animação on-scroll) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="NeuroByte - Gestão Inteligente com IoT. Monitoramento por Arduino, dashboard em tempo real, alertas e automação.">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- Substitua 'logo.png' pelo seu logo local -->
+        <img src="images/logo.png" alt="NeuroByte Logo" class="logo-img">
+        <span class="brand-name">NeuroByte</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#planos">Planos</a>
+        <a href="#time">Time</a>
+      </nav>
+
+      <a href="#planos" class="btn header-cta">Começar</a>
+
+      <button class="mobile-toggle" aria-label="Abrir menu">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO (fundo especial somente aqui) ================= -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg"></div> <!-- fundo com grid e gradiente -->
+    <div class="hero-inner container" data-aos="fade-up">
+      
+      <h1 class="hero-title gradient-title">Gestão Inteligente com <span>IoT</span></h1>
+      <p class="hero-sub">AI &amp; Automation Solutions</p>
+
+      <p class="hero-desc">
+        Transforme seu negócio com monitoramento em tempo real através de Arduino.
+        Controle temperatura, otimize promoções e tome decisões baseadas em dados.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#planos">Começar Agora</a>
+        <a class="btn btn-outline" href="#dashboard"><i class="fa fa-chart-line"></i> Ver Dashboard</a>
+      </div>
+
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="120">
+        <div class="stat"><h3>500+</h3><p>Empresas Atendidas</p></div>
+        <div class="stat"><h3>10k+</h3><p>Sensores Ativos</p></div>
+        <div class="stat"><h3>99.9%</h3><p>Uptime</p></div>
+        <div class="stat"><h3>24/7</h3><p>Suporte</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE (breve) ================= -->
+  <section id="sobre" class="section-dark">
+    <div class="container" data-aos="fade-right">
+      <h2 class="section-title gradient-title">Sobre a NeuroByte</h2>
+      <p class="lead">Somos pioneiros em soluções de automação e gestão empresarial através de IoT. Combinamos a simplicidade do Arduino com a inteligência de dados avançados para transformar a forma como empresas gerenciam suas operações.</p>
+    </div>
+  </section>
+
+  <!-- ================= FUNCIONALIDADES (6 cards: 3 + 3) ================= -->
+  <section id="funcionalidades" class="section-light">
+    <div class="container">
+      <h2 class="section-title gradient-title" data-aos="fade-up">Funcionalidades Poderosas</h2>
+      <p class="lead" data-aos="fade-up" data-aos="fade-delay">Tecnologia de ponta para gestão empresarial completa</p>
+
+      <!-- Grid 3 + 3 -->
+      <div class="features-grid features-grid-2rows" data-aos="fade-up" data-aos-delay="120">
+        <!-- Linha 1 - 3 cards -->
+        <article class="feature" data-aos="flip-up" data-aos-delay="50">
+          <div class="feature-icon"><i class="fa fa-thermometer-half"></i></div>
+          <h3>Monitoramento de Temperatura</h3>
+          <p>Controle em tempo real de ambientes, refrigeradores e equipamentos com alertas inteligentes.</p>
+        </article>
+
+        <article class="feature" data-aos="flip-up" data-aos-delay="80">
+          <div class="feature-icon"><i class="fa fa-bell"></i></div>
+          <h3>Alertas Inteligentes</h3>
+          <p>Notificações instantâneas quando parâmetros saem do normal, prevenindo perdas.</p>
+        </article>
+
+        <article class="feature" data-aos="flip-up" data-aos-delay="110">
+          <div class="feature-icon"><i class="fa fa-robot"></i></div>
+          <h3>Análise Preditiva</h3>
+          <p>Use IA para prever tendências e otimizar operações com dados históricos.</p>
+        </article>
+
+        <!-- Linha 2 - 3 cards -->
+        <article class="feature" data-aos="flip-up" data-aos-delay="140">
+          <div class="feature-icon"><i class="fa fa-tags"></i></div>
+          <h3>Sistema de Promoções</h3>
+          <p>Crie promoções estratégicas baseadas em dados de estoque, temperatura e vendas.</p>
+        </article>
+
+        <article class="feature" data-aos="flip-up" data-aos-delay="170">
+          <div class="feature-icon"><i class="fa fa-tachometer-alt"></i></div>
+          <h3>Dashboard Avançado</h3>
+          <p>Gráficos interativos e relatórios para tomada de decisão em tempo real.</p>
+        </article>
+
+        <article class="feature" data-aos="flip-up" data-aos-delay="200">
+          <div class="feature-icon"><i class="fa fa-microchip"></i></div>
+          <h3>Integração Arduino</h3>
+          <p>Conecte seus dispositivos Arduino e comece a monitorar em minutos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= O QUE FAZEMOS (2x2) ================= -->
+  <section id="servicos" class="section-dark">
+    <div class="container">
+      <h2 class="section-title gradient-title" data-aos="fade-up">O Que Fazemos</h2>
+      <p class="lead" data-aos="fade-up" data-aos-delay="60">Soluções completas de IoT e automação para seu negócio</p>
+
+      <div class="services-grid services-grid-2x2" data-aos="fade-up" data-aos-delay="120">
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="40">
+          <div class="svc-icon"><i class="fa fa-building"></i></div>
+          <div class="svc-content">
+            <h4>Gestão Empresarial Inteligente</h4>
+            <p>Transforme dados de sensores em decisões estratégicas com nossa plataforma de gestão completa.</p>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="80">
+          <div class="svc-icon"><i class="fa fa-bolt"></i></div>
+          <div class="svc-content">
+            <h4>Automação com Arduino</h4>
+            <p>Implemente soluções de IoT com Arduino para monitorar e controlar aspectos críticos do seu negócio.</p>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="120">
+          <div class="svc-icon"><i class="fa fa-bullseye"></i></div>
+          <div class="svc-content">
+            <h4>Estratégias de Promoção</h4>
+            <p>Use dados em tempo real para criar promoções inteligentes que aumentam vendas e reduzem perdas.</p>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="160">
+          <div class="svc-icon"><i class="fa fa-user-tie"></i></div>
+          <div class="svc-content">
+            <h4>Consultoria Especializada</h4>
+            <p>Nossa equipe ajuda você a implementar as melhores soluções para o seu tipo de negócio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= "POR QUE ESCOLHER" ================= -->
+  <section id="porque" class="section-light">
+    <div class="container two-col">
+      <div class="why-left" data-aos="fade-right">
+        <h2 class="section-title gradient-title">Por Que Escolher a NeuroByte?</h2>
+        <ul class="why-list">
+          <li><span class="dot blue"></span><strong>Especialistas em Arduino:</strong> Dominamos a tecnologia de sensores e sua integração</li>
+          <li><span class="dot purple"></span><strong>Dashboard Intuitivo:</strong> Interface amigável que qualquer um pode usar</li>
+          <li><span class="dot green"></span><strong>Suporte Completo:</strong> Da instalação à operação, estamos com você</li>
+          <li><span class="dot teal"></span><strong>ROI Comprovado:</strong> Clientes reduzem perdas em até 40%</li>
+        </ul>
+      </div>
+
+      <div class="why-right" data-aos="fade-left">
+        <div class="impact-card">
+          <div class="impact-number">35%</div>
+          <div class="impact-text">
+            <h4>Redução média de perdas</h4>
+            <p>com nossos sistemas de monitoramento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DASHBOARD (gráfico horizontal corrigido) ================= -->
+  <section id="dashboard" class="section-dark">
+    <div class="container">
+      <h2 class="section-title gradient-title" data-aos="fade-up">Dashboard em Tempo Real</h2>
+      <p class="lead" data-aos="fade-up" data-aos-delay="60">Visualize todos os dados dos seus sensores Arduino em um único lugar</p>
+
+      <div class="dashboard-cards" data-aos="fade-up" data-aos-delay="120">
+        <div class="dash-card">
+          <i class="fa fa-thermometer-half dash-icon"></i>
+          <div>
+            <h3 id="avg-temp">--°C</h3>
+            <p>Temperatura Média</p>
+            <div class="progress"><div id="bar-temp" class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <i class="fa fa-droplet dash-icon"></i>
+          <div>
+            <h3 id="avg-hum">--%</h3>
+            <p>Umidade</p>
+            <div class="progress"><div id="bar-hum" class="progress-fill purple"></div></div>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <i class="fa fa-signal dash-icon"></i>
+          <div>
+            <h3 id="sensors-online">--</h3>
+            <p>Sensores Ativos</p>
+            <span class="badge online">Todos Online</span>
+          </div>
+        </div>
+
+        <div class="dash-card warning">
+          <i class="fa fa-exclamation-triangle dash-icon"></i>
+          <div>
+            <h3 id="alerts-count">0</h3>
+            <p>Alertas Ativos</p>
+            <span class="badge warn">Requer Atenção</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-main" data-aos="fade-up" data-aos-delay="160">
+        <div class="dashboard-left">
+          <div class="card chart-card">
+            <h3>Histórico de Temperatura</h3>
+            <div class="chart-wrap">
+              <canvas id="tempChart"></canvas>
+            </div>
+          </div>
+
+          <div class="card small-cards">
+            <div class="small"><h4>Temperatura Média</h4><p class="big" id="card-temp">--°C</p></div>
+            <div class="small"><h4>Umidade</h4><p class="big" id="card-hum">--%</p></div>
+            <div class="small"><h4>Sensores Ativos</h4><p class="big" id="card-sensors">--</p></div>
+            <div class="small"><h4>Alertas</h4><p class="big" id="card-alerts">0</p></div>
+          </div>
+        </div>
+
+        <aside class="dashboard-right">
+          <div class="card">
+            <h3>Alertas Recentes</h3>
+            <ul id="alerts-list" class="alerts-list"></ul>
+          </div>
+
+          <div class="card">
+            <h3>Sensores (exemplo)</h3>
+            <ul class="sensors-list">
+              <li><strong>Câmara Fria 1</strong> — ARD-001 — <span class="status normal">normal</span> — 4.2°C</li>
+              <li><strong>Salão Principal</strong> — ARD-002 — <span class="status normal">normal</span> — 22.5°C</li>
+              <li><strong>Depósito</strong> — ARD-003 — <span class="status warn">warning</span> — 28.3°C</li>
+              <li><strong>Câmara Fria 2</strong> — ARD-004 — <span class="status normal">normal</span> — 3.8°C</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLANOS ================= -->
+  <section id="planos" class="section-light">
+    <div class="container">
+      <h2 class="section-title gradient-title" data-aos="fade-up">Planos de Assinatura</h2>
+      <p class="lead" data-aos="fade-up" data-aos-delay="60">Escolha o plano ideal para o tamanho do seu negócio</p>
+
+      <div class="plans-grid" data-aos="fade-up" data-aos-delay="120">
+        <div class="plan-card" data-aos="zoom-in" data-aos-delay="40">
+          <h3>Starter</h3>
+          <p class="price">R$ <span class="big-price">199</span> <span class="per">/mês</span></p>
+          <ul>
+            <li>Até 5 sensores Arduino</li>
+            <li>Dashboard básico</li>
+            <li>Monitoramento de temperatura</li>
+            <li>Alertas por email</li>
+            <li>Relatórios semanais</li>
+          </ul>
+          <a class="btn btn-outline" href="#contact">Começar Agora</a>
+        </div>
+
+        <div class="plan-card popular" data-aos="zoom-in" data-aos-delay="80">
+          <div class="tag">Mais Popular</div>
+          <h3>Professional</h3>
+          <p class="price">R$ <span class="big-price">499</span> <span class="per">/mês</span></p>
+          <ul>
+            <li>Até 20 sensores Arduino</li>
+            <li>Dashboard avançado</li>
+            <li>Alertas em tempo real</li>
+            <li>Suporte prioritário 24/7</li>
+            <li>Análise preditiva</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Começar Agora</a>
+        </div>
+
+        <div class="plan-card" data-aos="zoom-in" data-aos-delay="120">
+          <h3>Enterprise</h3>
+          <p class="price"><span class="big-price">Personalizado</span></p>
+          <ul>
+            <li>Sensores ilimitados</li>
+            <li>Dashboard customizado</li>
+            <li>API completa</li>
+            <li>Suporte dedicado</li>
+            <li>Consultoria estratégica</li>
+          </ul>
+          <a class="btn btn-outline" href="#contact">Falar com Vendas</a>
+        </div>
+      </div>
+
+      <p class="plans-note">Todos os planos incluem: Sem taxa de instalação • Cancele quando quiser • Atualizações gratuitas • Segurança garantida</p>
+    </div>
+  </section>
+
+  <section class="team-section">
+  <h2 class="gradient-title">Nosso <span>Time</span></h2>
+  
+
+  <div class="team-grid">
+    <!-- Primeira linha (3 membros) -->
+    <div class="team-row row-3">
+      <div class="team-card">
+        <div class="team-photo"><img src="images/team1.png" alt="Membro 1"></div>
+        <h3>Abner Alves</h3>
+        <p>Diretor Executivo</p>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/team2.png" alt="Membro 2"></div>
+        <h3>Lucas Paganatto</h3>
+        <p>Diretor de T.I</p>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/team3.png" alt="Membro 3"></div>
+        <h3>Gabriel Carvalho</h3>
+        <p>Diretor de Marketing</p>
+      </div>
+    </div>
+
+    <!-- Segunda linha (4 membros) -->
+    <div class="team-row row-4">
+      <div class="team-card">
+        <div class="team-photo"><img src="images/team4.png" alt="Membro 4"></div>
+        <h3>Kauan Lucca</h3>
+        <p>Diretor de Vendas</p>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/team5.jpeg" alt="Membro 5"></div>
+        <h3>Chico Moedas</h3>
+        <p>Suporte Técnico</p>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/team6.png" alt="Membro 6"></div>
+        <h3>Ivalmar</h3>
+        <p>Operações Carai</p>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images//team7.png" alt="Membro 7"></div>
+        <h3>Kaique Gomes</h3>
+        <p>Desenvolvedor de IoT</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/logo.png" alt="NeuroByte Logo" class="footer-logo">
+        <p>Transformando negócios através de soluções inteligentes de IoT e automação com Arduino.</p>
+      </div>
+
+      <div>
+        <h4>Links Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#time">Time</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p><strong>Email:</strong> contato@neurobyte.com</p>
+        <p><strong>Telefone:</strong> +55 (11) 97081-3264</p>
+        <p><strong>Localização:</strong> São Paulo, Brasil</p>
+      </div>
+    </div>
+
+    <div class="copy">
+      © <span id="year"></span> NeuroByte. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS EXTERNOS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
